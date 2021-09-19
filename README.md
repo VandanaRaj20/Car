@@ -1,1 +1,3 @@
 # Car
+
+An animated icon
