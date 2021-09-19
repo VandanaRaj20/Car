@@ -1,0 +1,53 @@
+#car{
+  color: rgb(255, 44, 44);
+  font-size: 6em;
+  animation: drive 5s infinite;
+  animation-delay: 1s;
+}
+
+#sun{
+  font-size: 7em;
+  padding-left: 4%;
+  padding-top: 4%;
+  position: fixed;
+  color: rgb(255, 236, 60);
+  animation: sunny 8s infinite;
+}
+
+@keyframes sunny {
+  from {
+    transform: rotate(0deg);
+    text-shadow: 0 0 10px rgb(255, 243, 75), 0 0 20px rgb(255, 248, 145), 0 0 30px rgba(255, 252, 206, 0.76);
+  }
+
+  to{
+    transform: rotate(360deg);
+    text-shadow:  0 0 30px rgba(255, 252, 206, 0.76), 0 0 20px rgb(255, 248, 145), 0 0 10px rgb(255, 243, 75);
+  }
+  
+}
+
+hr{
+  border: 10px solid black;
+}
+
+div{
+  background-color: rgb(166, 255, 248);
+  padding: 22%;
+  text-align: center;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  50% {
+    transform: translateX(300px);
+
+  }
+
+  100% {
+    transform: translateX(-300px);
+  }
+}
